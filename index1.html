@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Header Styles */
+        .header {
+            background: #5cb85c;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        /* Navigation Styles */
+        .nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+            padding: 10px;
+        }
+
+        .nav a {
+            color: #fff;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            background: #5cb85c;
+        }
+
+        /* Main Content Styles */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Button Styles */
+        .add-book-btn {
+            background: #5cb85c;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .add-book-btn:hover {
+            background: #4cae4c;
+        }
+
+        /* Footer Styles */
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Library Management System</h1>
+    </div>
+
+    <div class="nav">
+        <a href="dashborad.html">Dashboard</a>
+        <a href="books.html">Books</a>
+        <a href="#add-book" class="add-book-btn" onclick="redirectToAddBook()">Add Book</a>
+        <a href="about.html">About</a>
+    </div>
+  <center>  <img src="C:\Users\matha\OneDrive\Pictures\lib.webp" alt="lib" height="400" width="1400"/></center>
+    <div class="container" id="dashboard">
+        <h2>Welcome to the Library Management Dashboard</h2>
+        <p>This dashboard allows you to manage your library efficiently.</p>
+        <p>You can add new books, view the list of existing books, and more.</p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Library Management System. All Rights Reserved.</p>
+    </div>
+
+    <script>
+        function redirectToAddBook() {
+            window.location.href = 'http://localhost:3000'; // Update this URL to your React app's Add Book page
+        }
+    </script>
+</body>
+</html>
